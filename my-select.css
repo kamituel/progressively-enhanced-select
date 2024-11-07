@@ -1,0 +1,79 @@
+/* my-select:defined > select {
+  display: none;
+} */
+
+my-select {
+  box-sizing: border-box;
+  position:relative;
+  --primary: hsl(100deg, 20%, 40%);
+  --light-primary: color-mix(in hsl, var(--primary), white 70%);
+  --border: .2em solid var(--primary);
+  --border-radius: .5em;
+}
+
+my-select :is(select, input) {
+  height: 100%;
+  font-size: 1em;
+  padding: .5em 1em;
+  background-color: var(--light-primary);
+  border: var(--border);
+  border-radius: var(--border-radius);
+}
+
+my-select > div {
+  display: inline-block;
+}
+
+my-select .my-select__dropdown {
+  position: absolute;
+  z-index: 999;
+  top: calc(100% - .2em);
+  left: 0;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+  background-color: var(--light-primary);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  list-style: none;
+  font-size: .8em;
+}
+
+my-select .my-select__dropdown li {
+  position: relative;
+}
+
+my-select .my-select__dropdown li > * + * {
+  margin-inline-start: .5em;
+}
+
+my-select .my-select__dropdown button {
+  background: none;
+  border: none;
+  padding: .5em 0;
+}
+
+/* Click area */
+my-select .my-select__dropdown button:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+my-select .my-select__dropdown li:hover button {
+  font-weight: bold;
+}
+
+my-select svg {
+  width: 1em;
+  height: 1em;
+}
+
+my-select .my-select__clear-option {
+  border-bottom: .1em dashed var(--primary);
+  margin-bottom: .5em;
+  padding-bottom: .25em;
+}
