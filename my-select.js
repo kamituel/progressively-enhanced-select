@@ -130,8 +130,9 @@ class MySelect extends HTMLElement {
 }
 
 
-// Delay registering the custom element to simulate the network delay.
-setTimeout(
-  () => customElements.define('my-select', MySelect),
-  1000
-)
+// Delay registering the custom element, to allow users to easily see the page before and after
+// JS is loaded - to see progressive enhancement.
+document.querySelector('[data-load-js]').addEventListener('click', (event) => {
+  customElements.define('my-select', MySelect)
+  event.target.parentElement.querySelector('span').textContent = 'Loaded'
+})

@@ -5,8 +5,6 @@
     <meta http-equiv="Content-Security-Policy" content="script-src 'self' https://unpkg.com;">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="my-select.css">
-    <script type="module" async src="my-select.js"></script>
-
   </head>
   <body>
 
@@ -42,6 +40,11 @@
       Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam a nibh aliquet, ullamcorper dolor in, cursus metus. Ut viverra ipsum sit amet viverra iaculis. Duis dapibus, urna eu convallis convallis, ex sem fringilla lectus, eget consequat nisi massa ut turpis. Duis nulla lectus, gravida sed maximus in, facilisis quis arcu. Morbi ut tellus nec felis vestibulum congue in vitae nisl. Ut dignissim pretium neque, vel pulvinar sem hendrerit eget. Etiam tempor convallis ante ac ornare. Etiam efficitur id urna quis efficitur. Morbi accumsan lectus non ligula faucibus, nec tempor augue fermentum.
     </p>
 
+    <p class="info-panel">
+      <button data-load-js>Load Javascript</button>
+      <span>Not yet loaded</span>
+    </p>
+
     <form action="">
 
       <!-- The basic element. -->
@@ -53,7 +56,7 @@
           <select name="book">
             <option value="foundation">Foundation</option>
             <option value="pebble">Pebble in the Sky</option>
-            <option value="seldon">The Caves of Steel</option>
+            <option value="caves-of-steel">The Caves of Steel</option>
           </select>
         </my-select>
       </div>
@@ -81,5 +84,7 @@
     <p>
       Duis nec mauris in ligula ornare euismod. Aliquam imperdiet ex eget odio gravida suscipit. Quisque suscipit sagittis nunc, nec sodales leo hendrerit in. Sed vitae lorem turpis. Duis eleifend ante sit amet tellus ornare, eget vulputate velit faucibus. Duis vel orci nulla. Sed mollis enim justo, et convallis tortor mollis sed. Cras et semper magna. Integer molestie porttitor orci. Integer elementum, nulla id egestas ornare, metus risus imperdiet lacus, sed iaculis metus massa a odio. Fusce erat elit, rhoncus eget volutpat id, efficitur at magna.
     </p>
+
+    <script type="module" async src="my-select.js"></script>
   </body>
 </html>

@@ -24,3 +24,9 @@ form > div:has(label) {
 form > div:has(label) > label {
   flex: 1 0 6em;
 }
+
+.info-panel {
+  font-family: sans-serif;
+  padding: .5em 1em;
+  border: .1em solid black;
+}

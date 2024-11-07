@@ -20,6 +20,14 @@ my-select :is(select, input) {
   border-radius: var(--border-radius);
 }
 
+my-select select {
+  padding: .5em 1em;
+}
+
+my-select input {
+  padding: .55em 1.25em;
+}
+
 my-select > div {
   display: inline-block;
 }
