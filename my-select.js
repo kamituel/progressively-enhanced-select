@@ -103,7 +103,6 @@ class MySelect extends HTMLElement {
     }
 
     let searchTerm = this.input.value.trim()
-    console.log('t', searchTerm)
 
     return this.#options
                 .filter(option => {
