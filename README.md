@@ -11,7 +11,9 @@ The goal is for this to be:
 
 See [/index.html](./index.html) for usage of `<my-select>`.
 
-Demo available. Execute:
+Demo deployed at [https://kamituel.github.io/progressively-enhanced-select/](https://kamituel.github.io/progressively-enhanced-select/).
+
+To run it locally, execute:
 
 ```
 $ npm install
